@@ -4,9 +4,6 @@
       "intent": "CanICookIntent"
     },
     {
-      "intent": ""
-    },
-    {
       "intent": "AMAZON.StopIntent"
     },
     {

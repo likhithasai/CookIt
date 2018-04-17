@@ -17,7 +17,7 @@ import com.amazon.ask.Skill;
 import com.amazon.ask.Skills;
 import com.amazon.ask.SkillStreamHandler;
 import com.amazon.ask.helloworld.handlers.CancelandStopIntentHandler;
-import com.amazon.ask.helloworld.handlers.HelloWorldIntentHandler;
+import com.amazon.ask.helloworld.handlers.CanICookHandler;
 import com.amazon.ask.helloworld.handlers.HelpIntentHandler;
 import com.amazon.ask.helloworld.handlers.SessionEndedRequestHandler;
 import com.amazon.ask.helloworld.handlers.LaunchRequestHandler;
@@ -28,7 +28,7 @@ public class HelloWorldStreamHandler extends SkillStreamHandler {
         return Skills.standard()
                 .addRequestHandlers(
                         new CancelandStopIntentHandler(),
-                        new HelloWorldIntentHandler(),
+                        new CanICookHandler(),
                         new HelpIntentHandler(),
                         new LaunchRequestHandler(),
                         new SessionEndedRequestHandler())

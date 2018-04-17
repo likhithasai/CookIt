@@ -1,7 +1,10 @@
 {
   "intents": [
     {
-      "intent": "HelloWorldIntent"
+      "intent": "CanYouCookIntent"
+    },
+    {
+      "intent": ""
     },
     {
       "intent": "AMAZON.StopIntent"

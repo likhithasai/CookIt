@@ -14,19 +14,17 @@
         "samples": []
       },
       {
-        "name": "HelloWorldIntent",
+        "name": "CanICookIntent",
         "samples": [
-          "say hello",
-          "say hello world",
-          "hello",
-          "say hi",
-          "say hi world",
-          "hi",
-          "how are you"
+          "what can i cook",
+          "what can i cook today",
+          "i want to cook",
+          "i am hungry",
+          "give me food"
         ],
         "slots": []
       }
     ],
-    "invocationName": "hello world"
+    "invocationName": "cook it"
   }
 }

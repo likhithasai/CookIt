@@ -1,5 +1,5 @@
-CanYouCookIntent what can i cook
-CanYouCookIntent what can i cook today
-CanYouCookIntent i want to cook
-CanYouCookIntent i am hungry
-CanYouCookIntent give me food
+CanICookIntent what can i cook
+CanICookIntent what can i cook today
+CanICookIntent i want to cook
+CanICookIntent i am hungry
+CanICookIntent give me food

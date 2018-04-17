@@ -1,7 +1,7 @@
 {
   "intents": [
     {
-      "intent": "CanYouCookIntent"
+      "intent": "CanICookIntent"
     },
     {
       "intent": ""

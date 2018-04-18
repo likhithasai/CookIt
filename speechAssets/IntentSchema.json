@@ -4,6 +4,9 @@
       "intent": "CanICookIntent"
     },
     {
+      "intent": "CookWithRecipeIntent"
+    },
+    {
       "intent": "AMAZON.StopIntent"
     },
     {

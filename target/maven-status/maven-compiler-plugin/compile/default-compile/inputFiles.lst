@@ -1,6 +1,7 @@
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/CancelandStopIntentHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/HelloWorldStreamHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/LaunchRequestHandler.java
+/Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/CookWithRecipeHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/HelpIntentHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/CanICookHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/SessionEndedRequestHandler.java

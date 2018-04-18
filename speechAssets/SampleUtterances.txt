@@ -3,3 +3,14 @@ CanICookIntent what can i cook today
 CanICookIntent i want to cook
 CanICookIntent i am hungry
 CanICookIntent give me food
+
+CanYouCookIntent what can i cook
+CanYouCookIntent what can i cook today
+CanYouCookIntent i want to cook
+CanYouCookIntent i am hungry
+CanYouCookIntent give me food
+
+CookWithRecipeIntent what's in my fridge
+CookWithRecipeIntent what do i have
+CookWithRecipeIntent what's there to cook with 
+

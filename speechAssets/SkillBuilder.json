@@ -23,6 +23,15 @@
           "give me food"
         ],
         "slots": []
+      },
+      {
+        "name": "CookWithRecipeIntent",
+        "samples": [
+          "what's in my fridge",
+          "what do i have",
+          "what is there to cook with "
+        ],
+        "slots": []
       }
     ],
     "invocationName": "cook it"

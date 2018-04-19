@@ -38,6 +38,15 @@
                     ]
                 },
                 {
+                    "name": "ImBoredIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's the next step",
+                        "the next step",
+                        "could you tell the next step"
+                    ]
+                },
+                {
                     "name": "RepeatStepIntent",
                     "slots": [],
                     "samples": [

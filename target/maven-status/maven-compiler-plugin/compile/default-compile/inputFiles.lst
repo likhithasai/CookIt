@@ -1,12 +1,14 @@
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/CancelandStopIntentHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/NextStepHandler.java
+/Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/ImBoredHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/TimeHandler.java
+/Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/RepeatStepHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/ServingsHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/HelloWorldStreamHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/LaunchRequestHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/CookWithRecipeHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/HelpIntentHandler.java
+/Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/AnswerIntentHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/CalorieHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/CanICookHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/SessionEndedRequestHandler.java
-/Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/RepeatStepHandler.java

@@ -58,12 +58,22 @@ public class CanICookHandler implements RequestHandler {
     	   		speechText = steps[0];
     	   		input.getAttributesManager().getSessionAttributes().put("currentStep", 1);
     	   		input.getAttributesManager().getSessionAttributes().put("currentRecipe", "Chicken Stir Fry");
-    	   		System.out.println(input.getAttributesManager().getSessionAttributes().get("currentRecipe"));
-    	   		System.out.println(input.getAttributesManager().getSessionAttributes().get("currentStep"));
+    	   		
     	   		
        }
        else if(ing1.equals("eggs")){
-    	   		speechText = "Cook with eggs";
+	    	    String[] steps = NextStepHandler.recipes.get("Omelette");
+		   		speechText = steps[0];
+		   		input.getAttributesManager().getSessionAttributes().put("currentStep", 1);
+		   		input.getAttributesManager().getSessionAttributes().put("currentRecipe", "Omelette");
+		   	
+       }
+       else if(ing1.equals("cheese")){
+	    	    String[] steps = NextStepHandler.recipes.get("Cheese on toast");
+		   		speechText = steps[0];
+		   		input.getAttributesManager().getSessionAttributes().put("currentStep", 1);
+		   		input.getAttributesManager().getSessionAttributes().put("currentRecipe", "Cheese on toast");
+		   		
        }
     
        return input.getResponseBuilder()

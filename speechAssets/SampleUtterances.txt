@@ -14,3 +14,12 @@ CookWithRecipeIntent what's in my fridge
 CookWithRecipeIntent what do i have
 CookWithRecipeIntent what's there to cook with 
 
+NextStepIntent what's the next step
+NextStepIntent the next step
+NextStepIntent could you tell the next step
+
+RepeatStepIntent could you repeat the step
+RepeatStepIntent can you repeat the step
+RepeatStepIntent repeat the step
+RepeatStepIntent I did not hear that
+RepeatStepIntent Sorry what was that again

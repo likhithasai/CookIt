@@ -18,9 +18,12 @@ import com.amazon.ask.Skills;
 import com.amazon.ask.SkillStreamHandler;
 import com.amazon.ask.helloworld.handlers.CancelandStopIntentHandler;
 import com.amazon.ask.helloworld.handlers.CanICookHandler;
+import com.amazon.ask.helloworld.handlers.CookWithRecipeHandler;
 import com.amazon.ask.helloworld.handlers.HelpIntentHandler;
 import com.amazon.ask.helloworld.handlers.SessionEndedRequestHandler;
 import com.amazon.ask.helloworld.handlers.LaunchRequestHandler;
+import com.amazon.ask.helloworld.handlers.NextStepHandler;
+import com.amazon.ask.helloworld.handlers.RepeatStepHandler;
 
 public class HelloWorldStreamHandler extends SkillStreamHandler {
 
@@ -29,11 +32,13 @@ public class HelloWorldStreamHandler extends SkillStreamHandler {
                 .addRequestHandlers(
                         new CancelandStopIntentHandler(),
                         new CanICookHandler(),
+                        new CookWithRecipeHandler(),
+                        new NextStepHandler(),
+                        new RepeatStepHandler(),
                         new HelpIntentHandler(),
                         new LaunchRequestHandler(),
                         new SessionEndedRequestHandler())
-                // Add your skill id below
-                //.withSkillId("")
+                .withSkillId("amzn1.ask.skill.2fc0643f-047d-4202-8b97-fdad695e09ac")
                 .build();
     }
 

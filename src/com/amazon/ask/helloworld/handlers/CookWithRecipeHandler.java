@@ -33,24 +33,39 @@ public class CookWithRecipeHandler implements RequestHandler {
 
     @Override
     public boolean canHandle(HandlerInput input) {
-        return input.matches(intentName("CanICookIntent"));
+        return input.matches(intentName("CookWithRecipeIntent"));
     }
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-    	GetItemResult response = AmazonDynamoDBClientBuilder.defaultClient()
-    		.getItem(new GetItemRequest()
-            .withTableName("items")
-            .withKey(Collections.singletonMap("item_name", new AttributeValue().withS("chicken"))));
-    	int qty = Integer.parseInt(response.getItem().get("item_qty").getN());
-    	
-    	
-       String speechText = "Do you want to cook with" + String.valueOf(qty) + "chicken?";
+ 
+       String speechText = "Do you want to cook with chicken?";
        return input.getResponseBuilder()
                 .withSpeech(speechText)
-                .withSimpleCard("CanICook", speechText)
+                .withSimpleCard("CookWith", speechText)
+                .withReprompt(speechText)
                 .build();
     }
+  /*  @Override
+    public boolean canHandle(HandlerInput input) {
+        return input.matches(intentName("CookWithRecipeIntent"));
+    }
+
+    @Override
+    public Optional<Response> handle(HandlerInput input) {
+//    	GetItemResult response = AmazonDynamoDBClientBuilder.defaultClient()
+//    		.getItem(new GetItemRequest()
+//            .withTableName("items")
+//            .withKey(Collections.singletonMap("item_name", new AttributeValue().withS("chicken"))));
+//    	int qty = Integer.parseInt(response.getItem().get("item_qty").getN());
+//    	
+       //+ String.valueOf(qty) +
+       String speechText = "Do you want to cook with chicken?";
+       return input.getResponseBuilder()
+                .withSpeech(speechText)
+                .withSimpleCard("CookWithWhat", speechText)
+                .build();
+    }*/
 
 }
 

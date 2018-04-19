@@ -1,39 +1,104 @@
 {
-  "languageModel": {
-    "intents": [
-      {
-        "name": "AMAZON.CancelIntent",
-        "samples": []
-      },
-      {
-        "name": "AMAZON.HelpIntent",
-        "samples": []
-      },
-      {
-        "name": "AMAZON.StopIntent",
-        "samples": []
-      },
-      {
-        "name": "CanICookIntent",
-        "samples": [
-          "what can i cook",
-          "what can i cook today",
-          "i want to cook",
-          "i am hungry",
-          "give me food"
-        ],
-        "slots": []
-      },
-      {
-        "name": "CookWithRecipeIntent",
-        "samples": [
-          "what's in my fridge",
-          "what do i have",
-          "what is there to cook with "
-        ],
-        "slots": []
-      }
-    ],
-    "invocationName": "cook it"
-  }
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "cook it",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CanICookIntent",
+                    "slots": [
+                        {
+                            "name": "ing",
+                            "type": "Ingredients"
+                        }
+                    ],
+                    "samples": [
+                        "what can i cook with {ing}",
+                        "what can i cook",
+                        "what can i cook today",
+                        "i want to cook",
+                        "i am hungry",
+                        "give me food"
+                    ]
+                },
+                {
+                    "name": "NextStepIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's the next step",
+                        "the next step",
+                        "could you tell the next step"
+                    ]
+                },
+                {
+                    "name": "RepeatStepIntent",
+                    "slots": [],
+                    "samples": [
+                        "could you repeat the step",
+                        "can you repeat the step",
+                        "repeat the step",
+                        "I did not hear that",
+                        "sorry what was that again"
+                    ]
+                },
+                {
+                    "name": "CookWithRecipeIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's in my fridge",
+                        "what do i have",
+                        "what's there to cook with"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Ingredients",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "rice"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "salmon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eggs"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "potatoes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tomatoes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chicken"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
 }

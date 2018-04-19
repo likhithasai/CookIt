@@ -7,6 +7,12 @@
       "intent": "CookWithRecipeIntent"
     },
     {
+      "intent": "RepeatStepIntent"
+    },
+    {
+      "intent": "NextStepIntent"
+    },
+    {
       "intent": "AMAZON.StopIntent"
     },
     {

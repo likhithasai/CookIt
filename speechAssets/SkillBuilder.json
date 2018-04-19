@@ -24,12 +24,8 @@
                         }
                     ],
                     "samples": [
-                        "what can i cook with {ing}",
-                        "what can i cook",
-                        "what can i cook today",
-                        "i want to cook",
-                        "i am hungry",
-                        "give me food"
+                        "Let us cook with {ing}",
+                        "let's cook with {ing}"
                     ]
                 },
                 {
@@ -54,11 +50,18 @@
                 },
                 {
                     "name": "CookWithRecipeIntent",
-                    "slots": [],
+                    "slots": [
+                        {
+                            "name": "ing_one",
+                            "type": "Ingredients"
+                        }
+                    ],
                     "samples": [
-                        "what's in my fridge",
-                        "what do i have",
-                        "what's there to cook with"
+                        "i am hungry",
+                        "i want to cook",
+                        "what can i cook",
+                        "what can i cook today ",
+                        "What can I cook with {ing_one}"
                     ]
                 }
             ],
@@ -99,6 +102,41 @@
                     ]
                 }
             ]
-        }
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "CookWithRecipeIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ing_one",
+                            "type": "Ingredients",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.273100539781.1299919679576"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.273100539781.1299919679576",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What do you want to cook with?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What do you want to cook with though?"
+                    }
+                ]
+            }
+        ]
     }
 }

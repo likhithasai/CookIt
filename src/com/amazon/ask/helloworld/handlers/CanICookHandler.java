@@ -44,36 +44,26 @@ public class CanICookHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-       Request request = input.getRequestEnvelope().getRequest();
-       IntentRequest intentRequest = (IntentRequest) request;
-       Intent intent = intentRequest.getIntent();
-       Map<String, Slot> slots = intent.getSlots();
-
-        // Get the color slot from the list of slots.
-       Slot firstingSlot = slots.get("ing");
-       String ing1 = firstingSlot.getValue();
+   
        String speechText = "";
-       if (ing1.equals("chicken")){
+       
+       String recipe = (String) input.getAttributesManager().getSessionAttributes().get("currentRecipe");
+       
+       if (recipe.equals("Chicken Stir Fry")){
     	   		String[] steps = NextStepHandler.recipes.get("Chicken Stir Fry");
     	   		speechText = steps[0];
-    	   		input.getAttributesManager().getSessionAttributes().put("currentStep", 1);
-    	   		input.getAttributesManager().getSessionAttributes().put("currentRecipe", "Chicken Stir Fry");
-    	   		
+    	   	
     	   		
        }
-       else if(ing1.equals("eggs")){
+       else if(recipe.equals("Omelette")){
 	    	    String[] steps = NextStepHandler.recipes.get("Omelette");
 		   		speechText = steps[0];
-		   		input.getAttributesManager().getSessionAttributes().put("currentStep", 1);
-		   		input.getAttributesManager().getSessionAttributes().put("currentRecipe", "Omelette");
+		   		
 		   	
        }
-       else if(ing1.equals("cheese")){
-	    	    String[] steps = NextStepHandler.recipes.get("Cheese on toast");
-		   		speechText = steps[0];
-		   		input.getAttributesManager().getSessionAttributes().put("currentStep", 1);
-		   		input.getAttributesManager().getSessionAttributes().put("currentRecipe", "Cheese on toast");
-		   		
+       else if(recipe.equals("Cheese Sandwich")){
+	    	    String[] steps = NextStepHandler.recipes.get("Cheese Sandwich");
+		   		speechText = steps[0];	
        }
     
        return input.getResponseBuilder()

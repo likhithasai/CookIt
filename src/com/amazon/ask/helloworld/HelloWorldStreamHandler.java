@@ -24,6 +24,10 @@ import com.amazon.ask.helloworld.handlers.SessionEndedRequestHandler;
 import com.amazon.ask.helloworld.handlers.LaunchRequestHandler;
 import com.amazon.ask.helloworld.handlers.NextStepHandler;
 import com.amazon.ask.helloworld.handlers.RepeatStepHandler;
+import com.amazon.ask.helloworld.handlers.ServingsHandler;
+import com.amazon.ask.helloworld.handlers.CalorieHandler;
+import com.amazon.ask.helloworld.handlers.TimeHandler;
+import com.amazon.ask.helloworld.handlers.ServingsHandler;
 
 public class HelloWorldStreamHandler extends SkillStreamHandler {
 
@@ -35,6 +39,9 @@ public class HelloWorldStreamHandler extends SkillStreamHandler {
                         new CookWithRecipeHandler(),
                         new NextStepHandler(),
                         new RepeatStepHandler(),
+                        new CalorieHandler(),
+                        new ServingsHandler(),
+                        new TimeHandler(),
                         new HelpIntentHandler(),
                         new LaunchRequestHandler(),
                         new SessionEndedRequestHandler())

@@ -35,12 +35,46 @@ public class AnswerIntentHandler implements RequestHandler {
          String ans = firstingSlot.getValue();
          String speechText = "";
          
-   
-         if (ans.equals("fact")){
-        	 speechText = "Yes! You're right. Ketchup can indeed dissolve aluminium";
+         int qn_idx = (int) input.getAttributesManager().getSessionAttributes().get("currentQuestion");
+         if (qn_idx == 0){
+	        	 if (ans.equals("fact")){
+	            	 speechText = "Yes! You're right. Ketchup can indeed dissolve aluminium";
+	         }
+	         else{
+	            	 speechText = "Oops! That's the wrong answer! Ketchup can dissolve aluminium due to an electrochemical effect";
+	         }
          }
-         else{
-        	 speechText = "Oops! That's the wrong answer! Ketchup can dissolve aluminium due to an electrochemical effect";
+         else if (qn_idx == 1){
+         	 if (ans.equals("fact")){
+         		 speechText = "Yes! You're right. Marion, Ohio, in the United States calls itself the popcorn capital of the world of the world.";
+         	 }
+         	 else{
+         		 speechText = "Oops! That's the wrong answer! Marion, Ohio, in the United States calls itself the popcorn capital of the world of the world";
+         	 }
+         }
+         else if (qn_idx == 2){
+         	 if (ans.equals("fact")){
+         		 speechText = "Yes! You're right. Apple trees do belong to the rose family";
+         	 }
+         	 else{
+         		 speechText = "Oops! That's the wrong answer! Apple trees do belong to the rose family. The rose family also include fruits like cherries and strawberries";
+         	 }
+         }
+         else if (qn_idx == 3){
+         	 if (ans.equals("fact")){
+         		 speechText = "Oops! That's the wrong answer! Some components of it don't breakdown and just pass through you undisturbed. ";
+         	 }
+         	 else{
+         		 speechText = "Yes you're right! That's fiction but don't try this at home";
+         	 }
+         }
+         else if (qn_idx == 4){
+        	     if (ans.equals("fact")){
+        	    	 	 speechText = "Oops! That's the wrong answer! A stick of celery has 10 calories but takes only 3 calories to digest.";
+	         }
+        	     else{
+        	    	 	 speechText = "Yes you're right! That's fiction";
+        	     }
          }
         
        

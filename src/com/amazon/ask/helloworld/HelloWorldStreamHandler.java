@@ -31,6 +31,7 @@ import com.amazon.ask.helloworld.handlers.ServingsHandler;
 import com.amazon.ask.helloworld.handlers.ImBoredHandler;
 import com.amazon.ask.helloworld.handlers.AnswerIntentHandler;
 import com.amazon.ask.helloworld.handlers.IngredientHandler;
+import com.amazon.ask.helloworld.handlers.DoesItContainHandler;
 
 public class HelloWorldStreamHandler extends SkillStreamHandler {
 
@@ -46,6 +47,7 @@ public class HelloWorldStreamHandler extends SkillStreamHandler {
                         new ServingsHandler(),
                         new ImBoredHandler(),
                         new AnswerIntentHandler(),
+                        new DoesItContainHandler(),
                         new IngredientHandler(),
                         new TimeHandler(),
                         new HelpIntentHandler(),

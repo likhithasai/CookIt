@@ -12,4 +12,5 @@
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/AnswerIntentHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/CalorieHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/CanICookHandler.java
+/Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/DoesItContainHandler.java
 /Users/LIKHITHASAI/Desktop/CookIt/src/com/amazon/ask/helloworld/handlers/SessionEndedRequestHandler.java
